@@ -5,3 +5,4 @@ scratch-check
 *.local
 .vite
 tsconfig.tsbuildinfo
+dist-ssr
