@@ -1,0 +1,15 @@
+# Real Sultan Foods — https://realsultanfoods.com
+User-agent: *
+Allow: /
+
+# Transactional pages carry no search value and can generate
+# near-duplicate URLs, so keep crawl budget off them.
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-confirmed
+
+# Legacy hash URLs from the old HashRouter build.
+Disallow: /*?*add=
+Disallow: /*&
+
+Sitemap: https://realsultanfoods.com/sitemap.xml
