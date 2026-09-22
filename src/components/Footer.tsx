@@ -85,6 +85,11 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <Link to="/wholesale" className="link-underline hover:text-cream">
+                  Wholesale &amp; distributorship
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="link-underline hover:text-cream">
                   Our story
                 </Link>
