@@ -203,7 +203,7 @@ const dwJuice: FruitSeed[] = [
 
 const dwJuiceProducts: Product[] = dwJuice.map((f) => ({
   slug: `diamond-way-${f.fruit}-juice`,
-  name: `Diamond Way ${f.flavour}`,
+  name: `Diamond Way ${f.flavour} Juice`,
   tagline: `${f.flavour} Fruit Drink · 250 ml / 500 ml / 1 litre`,
   brand: 'diamond-way' as BrandId,
   category: 'fruit-drinks' as CategoryId,
