@@ -88,7 +88,7 @@ export default function About() {
                 >
                   <img
                     src={asset(list[0].images[0])}
-                    alt=""
+                    alt={`${b.name} — ${b.blurb}`}
                     loading="lazy"
                     className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

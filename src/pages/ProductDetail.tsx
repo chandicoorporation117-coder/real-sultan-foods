@@ -131,7 +131,7 @@ export default function ProductDetail() {
                 >
                   <img
                     src={asset(src)}
-                    alt=""
+                    alt={`${product.name} ${product.tagline} — view ${i + 1}`}
                     className="size-full object-cover"
                     loading="lazy"
                   />

@@ -53,9 +53,9 @@ export default function Home() {
             </span>
 
             <h1 className="mt-5 font-display text-[clamp(2.4rem,7vw,4.5rem)] leading-[0.95] font-black">
-              Taste the
+              Taste the{' '}
               <br />
-              <span className="gold-text">Sultan</span> of
+              <span className="gold-text">Sultan</span> of{' '}
               <br />
               refreshment.
             </h1>
@@ -220,7 +220,7 @@ export default function Home() {
                   >
                     <img
                       src={asset(sample.images[1])}
-                      alt={b.name}
+                      alt={`${sample.name} — ${b.name} range`}
                       loading="lazy"
                       className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
