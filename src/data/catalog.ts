@@ -59,14 +59,13 @@ const petProducts: Product[] = maryDiamondPet.map((f) => ({
     `Real ${f.flavour.toLowerCase()} taste in every bottle`,
     'Resealable PET — drink half now, half later',
     'Shelf stable; no refrigeration needed until opened',
-    'Available in 500 ml and 1.5 litre',
+    'Available in 500 ml and 1 litre',
   ],
   ingredients:
     'Water, sugar, fruit pulp/concentrate, acidity regulator (INS 330), stabiliser, permitted flavour and colour, preservative (INS 211).',
   variants: [
-    { id: '500ml', label: '500 ml', price: 90, compareAt: 100, units: 1 },
-    { id: '1500ml', label: '1.5 litre', price: 180, compareAt: 200, units: 1 },
-    { id: 'case-500-12', label: 'Case · 12 × 500 ml', price: 980, compareAt: 1080, units: 12 },
+    { id: 'case-500-12', label: 'Case · 12 × 500 ml', price: 750, units: 12 },
+    { id: 'case-1000-6', label: 'Case · 6 × 1 litre', price: 750, units: 6 },
   ],
   badges: f.popularity > 90 ? ['Best seller'] : undefined,
   popularity: f.popularity,
@@ -104,9 +103,7 @@ const glassProducts: Product[] = maryDiamondGlass.map((f) => ({
   ingredients:
     'Water, sugar, fruit pulp/concentrate, acidity regulator (INS 330), permitted flavour and colour, preservative (INS 211).',
   variants: [
-    { id: 'single', label: 'Single · 250 ml', price: 70, units: 1 },
-    { id: 'pack-6', label: 'Pack of 6', price: 400, compareAt: 420, units: 6 },
-    { id: 'case-24', label: 'Case of 24', price: 1550, compareAt: 1680, units: 24 },
+    { id: 'case-250-12', label: 'Case · 12 × 250 ml', price: 950, units: 12 },
   ],
   badges: ['Restaurant pick'],
   popularity: f.popularity,
@@ -139,9 +136,7 @@ const tetraProducts: Product[] = [
   ingredients:
     'Water, sugar, fruit pulp/concentrate, acidity regulator (INS 330), permitted flavour and colour.',
   variants: [
-    { id: 'single', label: 'Single · 200 ml', price: 60, units: 1 },
-    { id: 'pack-12', label: 'Pack of 12', price: 680, compareAt: 720, units: 12 },
-    { id: 'carton-24', label: 'Carton of 24', price: 1320, compareAt: 1440, units: 24 },
+    { id: 'case-200-24', label: 'Case · 24 × 200 ml', price: 790, units: 24 },
   ],
   badges: ['School favourite'],
   popularity: f.popularity,
@@ -181,9 +176,7 @@ const basilProducts: Product[] = basilSeeds.map((f) => ({
   ingredients:
     'Water, sugar, basil seeds, acidity regulator (INS 330), permitted flavour and colour, preservative (INS 211).',
   variants: [
-    { id: 'single', label: 'Single · 290 ml', price: 120, units: 1 },
-    { id: 'pack-6', label: 'Pack of 6', price: 690, compareAt: 720, units: 6 },
-    { id: 'case-24', label: 'Case of 24', price: 2650, compareAt: 2880, units: 24 },
+    { id: 'case-290-12', label: 'Case · 12 × 290 ml', price: 1350, units: 12 },
   ],
   badges: f.popularity > 90 ? ['Best seller'] : undefined,
   popularity: f.popularity,
@@ -221,9 +214,9 @@ const dwJuiceProducts: Product[] = dwJuice.map((f) => ({
   ingredients:
     'Water, sugar, fruit pulp/concentrate, acidity regulator (INS 330), stabiliser, permitted flavour and colour, preservative (INS 211).',
   variants: [
-    { id: '250ml', label: '250 ml', price: 50, units: 1 },
-    { id: '500ml', label: '500 ml', price: 90, compareAt: 100, units: 1 },
-    { id: '1000ml', label: '1 litre', price: 160, compareAt: 180, units: 1 },
+    { id: 'case-250-24', label: 'Case · 24 × 250 ml', price: 800, units: 24 },
+    { id: 'case-500-12', label: 'Case · 12 × 500 ml', price: 650, units: 12 },
+    { id: 'case-1000-6', label: 'Case · 6 × 1 litre', price: 650, units: 6 },
   ],
   popularity: f.popularity,
 }));
@@ -254,9 +247,7 @@ const singles: Product[] = [
     ingredients:
       'Carbonated water, sugar, acidity regulator (INS 330), taurine, caffeine, ginseng extract, permitted flavour and colour, preservative (INS 211).',
     variants: [
-      { id: 'single', label: 'Single · 250 ml', price: 80, units: 1 },
-      { id: 'pack-6', label: 'Pack of 6', price: 460, compareAt: 480, units: 6 },
-      { id: 'case-24', label: 'Case of 24', price: 1780, compareAt: 1920, units: 24 },
+      { id: 'case-250-12', label: 'Case · 12 × 250 ml', price: 999, units: 12 },
     ],
     badges: ['High demand'],
     popularity: 94,
@@ -282,9 +273,9 @@ const singles: Product[] = [
     ingredients:
       'Carbonated water, sugar, acidity regulator (INS 330), permitted flavour, preservative (INS 211).',
     variants: [
-      { id: '300ml', label: '300 ml', price: 50, units: 1 },
-      { id: '500ml', label: '500 ml', price: 80, compareAt: 90, units: 1 },
-      { id: '1500ml', label: '1.5 litre', price: 150, compareAt: 170, units: 1 },
+      { id: 'case-300-12', label: 'Case · 12 × 300 ml', price: 450, units: 12 },
+      { id: 'case-500-12', label: 'Case · 12 × 500 ml', price: 600, units: 12 },
+      { id: 'case-1500-6', label: 'Case · 6 × 1.5 litre', price: 600, units: 6 },
     ],
     badges: ['Best seller'],
     popularity: 93,
@@ -310,9 +301,9 @@ const singles: Product[] = [
     ingredients:
       'Carbonated water, sugar, acidity regulator (INS 330), permitted flavour and colour, preservative (INS 211).',
     variants: [
-      { id: '300ml', label: '300 ml', price: 50, units: 1 },
-      { id: '500ml', label: '500 ml', price: 80, compareAt: 90, units: 1 },
-      { id: '1500ml', label: '1.5 litre', price: 150, compareAt: 170, units: 1 },
+      { id: 'case-300-12', label: 'Case · 12 × 300 ml', price: 450, units: 12 },
+      { id: 'case-500-12', label: 'Case · 12 × 500 ml', price: 600, units: 12 },
+      { id: 'case-1500-6', label: 'Case · 6 × 1.5 litre', price: 600, units: 6 },
     ],
     popularity: 87,
   },
@@ -336,9 +327,8 @@ const singles: Product[] = [
     ],
     ingredients: 'Purified drinking water with added minerals.',
     variants: [
-      { id: '500ml', label: '500 ml', price: 40, units: 1 },
-      { id: '1500ml', label: '1.5 litre', price: 80, units: 1 },
-      { id: 'carton-1500-12', label: 'Carton · 12 × 1.5 L', price: 850, compareAt: 960, units: 12 },
+      { id: 'carton-500-12', label: 'Carton · 12 × 500 ml', price: 290, units: 12 },
+      { id: 'carton-1500-6', label: 'Carton · 6 × 1.5 litre', price: 290, units: 6 },
     ],
     badges: ['Bulk friendly'],
     popularity: 82,
@@ -367,7 +357,6 @@ export const categoryName = (id: CategoryId) => categories.find((c) => c.id === 
 /** Distinct pack sizes, used by the shop page size filter. */
 export const sizeFilters = [
   { id: 'small', label: 'Up to 300 ml', match: (l: string) => /200 ml|250 ml|290 ml|300 ml/.test(l) },
-  { id: 'medium', label: '500 ml', match: (l: string) => /500 ml/.test(l) && !/×/.test(l) },
+  { id: 'medium', label: '500 ml', match: (l: string) => /500 ml/.test(l) },
   { id: 'large', label: '1 litre & above', match: (l: string) => /1 litre|1\.5 litre/.test(l) },
-  { id: 'bulk', label: 'Packs & cases', match: (l: string) => /Pack|Case|Carton/.test(l) },
 ];
