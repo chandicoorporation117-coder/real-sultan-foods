@@ -180,7 +180,7 @@ export default function Home() {
           title="Best sellers"
           action={{ to: '/shop?sort=popular', label: 'See all' }}
         />
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {bestSellers.map((p, i) => (
             <ProductCard key={p.slug} product={p} index={i} />
           ))}
@@ -247,7 +247,7 @@ export default function Home() {
             title="New arrivals"
             action={{ to: '/shop?sort=new', label: 'See all' }}
           />
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
             {newArrivals.map((p, i) => (
               <ProductCard key={p.slug} product={p} index={i} />
             ))}

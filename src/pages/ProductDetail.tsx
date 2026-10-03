@@ -319,7 +319,7 @@ export default function ProductDetail() {
           <h2 className="mb-6 font-display text-[clamp(1.5rem,4vw,2.2rem)] font-black">
             You might also like
           </h2>
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
             {related.map((p, i) => (
               <ProductCard key={p.slug} product={p} index={i} />
             ))}
